@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección a Grupo de WhatsApp</title>
+  <script>
+    window.onload = function () {
+      const grupos = [
+        "https://chat.whatsapp.com/FA5ZHVhvGxrBu67bVfeqUh",
+        "https://chat.whatsapp.com/KwOaeG4evB7DfwPyVoQs65",
+        "https://chat.whatsapp.com/BxLESAm3xYbBu4pHXgELGz"
+      ];
+      const grupoAleatorio = grupos[Math.floor(Math.random() * grupos.length)];
+      window.location.href = grupoAleatorio;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a un grupo de WhatsApp...</p>
+</body>
+</html>
