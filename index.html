@@ -2,20 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Redirección a Grupo de WhatsApp</title>
-  <script>
-    window.onload = function () {
-      const grupos = [
-        "https://chat.whatsapp.com/FA5ZHVhvGxrBu67bVfeqUh",
-        "https://chat.whatsapp.com/KwOaeG4evB7DfwPyVoQs65",
-        "https://chat.whatsapp.com/BxLESAm3xYbBu4pHXgELGz"
-      ];
-      const grupoAleatorio = grupos[Math.floor(Math.random() * grupos.length)];
-      window.location.href = grupoAleatorio;
-    };
-  </script>
+  <title>Únete a un grupo de WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .boton-grupo {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 250px;
+    }
+
+    .boton-grupo:hover {
+      background-color: #1ebf5c;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirigiendo a un grupo de WhatsApp...</p>
+
+  <h1>Únete a un grupo de WhatsApp</h1>
+
+  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/JogdjyvY5xxHModAC5H9hy'">MATCH PUB</button>
+  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/FA5ZHVhvGxrBu67bVfeqUh'">SUKI</button>
+  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/KwOaeG4evB7DfwPyVoQs65'">LIVEJOY</button>
+  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/BxLESAm3xYbBu4pHXgELGz'">HITI</button>
+
 </body>
 </html>
