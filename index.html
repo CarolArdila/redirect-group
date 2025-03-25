@@ -2,48 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Únete a un grupo de WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupos de WhatsApp - Nuevos Ingresos</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a1f44; /* Azul rey oscuro */
+      color: #f5e0c3; /* Color piel suave */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 50px;
-      background-color: #000000; /* fondo negro */
-      color: #FFD700; /* letras doradas */
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 2em;
+      max-width: 90%;
       margin-bottom: 40px;
+      line-height: 1.4;
     }
 
     .boton-grupo {
-      display: block;
-      margin: 15px auto;
-      padding: 15px 30px;
-      font-size: 20px;
-      background-color: #25D366; /* verde WhatsApp */
-      color: white; /* letras blancas en los botones */
+      background-color: #1f3b73;
+      color: #ffffff;
+      padding: 18px 25px;
+      margin: 12px 0;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      width: 90%;
+      max-width: 350px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 280px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .boton-grupo:hover {
-      background-color: #1ebf5c;
+      background-color: #2d4e9a;
+      transform: translateY(-2px);
     }
-  </style>
-</head>
-<body>
 
-  <h1>Únete A Uno De Nuestros Grupos de Nuevos Ingresos Para Obtener Más Información</h1>
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
 
-  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/JogdjyvY5xxHModAC5H9hy'">MATCH PUB</button>
-  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/FA5ZHVhvGxrBu67bVfeqUh'">SUKI</button>
-  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/KwOaeG4evB7DfwPyVoQs65'">LIVEJOY</button>
-  <button class="boton-grupo" onclick="window.location.href='https://chat.whatsapp.com/BxLESAm3xYbBu4pHXgELGz'">HITI</button>
-
-</body>
-</html>
+      .boton-grupo {
+        font-size: 1em
